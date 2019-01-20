@@ -9,7 +9,7 @@ const passport = require('passport');
 const mongoose = require('mongoose');
 
 const app = express();
-
+ 
 // Load Routes
 const ideas = require('./routes/ideas');
 const users = require('./routes/users');
@@ -49,7 +49,7 @@ app.use(methodOverride('_method'));
 app.use(session({
   secret: 'secret',
   resave: true,
-  saveUninitialized: true,
+  saveUninitialized: true
 }));
 
 // Passport middleware
